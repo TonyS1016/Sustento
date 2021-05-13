@@ -1,7 +1,8 @@
 # Sustento Sustainability Project Related Material and Work
 
-#Signed an NDA agreement and so will only update this repository after the project has been completed 
+#Phase 1 in the Better Building Challenge for LA
+  #Collaboration between UCLA and the Sustento Group in a joint effort to understand environmental data and provide actionable insights for stakeholders interested in urban      development in impoverished communities in the greater LA region. 
 
-#Estimated work period for this project is October 2020 to January 2021
+#Work period for this project was October 2020 to March 2021
 
-#Will be updated once allowed to 
+
