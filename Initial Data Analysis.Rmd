@@ -1,0 +1,168 @@
+---
+title: "Team One Presentation"
+author: "Yuting Cao, Nathan Kunz, Nick Vincent, Jiren Wang, Tianyu Sun"
+date: "11/20/2020"
+output: beamer_presentation
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+library(rmarkdown)
+library(fastDummies)
+library(corrplot)
+library(RColorBrewer)
+library(gridExtra)
+
+library(lubridate)
+library(RColorBrewer)
+library(leaflet)
+library(leaflet.extras)
+library(rgdal)
+library(readxl)
+library(gridExtra)
+
+getwd()
+setwd("C:/Users/Nate/Dropbox")
+buildraw = read.csv("Existing_Buildings_Energy___Water_Efficiency__EBEWE__Program.csv", na.strings = c("", "Not Available"))
+
+#Renaming Variables
+newnames = c("BUILDING.ADDRESS", "BUILDING.ID", "CO2.EMISSIONS", "COMPLIANCE.STATUS", "DIFFERENCE.FROM.NATIONAL.MEDIAN.SOURCE", "DIFFERENCE.FROM.NATIONAL.MEDIAN.SITE", "ENERGY.STAR.SCORE", "ENERGY.STAR.ELIGIBILITY", "ENERGY.STAR.LAST.APPROVAL.DATE", "ENERGY.STAR.YEARS.CERTIFIED", "ENTITY.BENCHMARK", "GROSS.FLOOR.AREA", "INDOOR.WATER.USE", "INDOOR.WATER.INTENSITY", "NUMBER.OF.BUILDINGS",  "OCCUPANCY", "OUTDOOR.WATER.USE", "POSTAL.CODE", "PROGRAM.YEAR", "PROPERTY.TYPE", "ENERGY.USE.INTENSITY", "Source.EUI.", "TOTAL.WATER.USE", "WEATHER.NORMALIZED.SITE.ENERGY.USE.INTENSITY", "WEATHER.NORMALIZED.SOURCE.ENERGY.USE.INTENSITY", "YEAR.BUILT", "AIN", "LADBS.Building.Category")
+oldnames = names(buildraw)
+names(buildraw)= newnames
+#Categorize variables
+quant_variables = c("CO2.EMISSIONS",  "DIFFERENCE.FROM.NATIONAL.MEDIAN.SOURCE", "DIFFERENCE.FROM.NATIONAL.MEDIAN.SITE", "ENERGY.STAR.SCORE", "GROSS.FLOOR.AREA", "INDOOR.WATER.USE", "INDOOR.WATER.INTENSITY", "NUMBER.OF.BUILDINGS", "OCCUPANCY", "OUTDOOR.WATER.USE", "ENERGY.USE.INTENSITY", "Source.EUI.",  "TOTAL.WATER.USE", "WEATHER.NORMALIZED.SITE.ENERGY.USE.INTENSITY", "WEATHER.NORMALIZED.SOURCE.ENERGY.USE.INTENSITY")
+
+cat_variables = names(buildraw)[!names(buildraw) %in% quant_variables]
+
+quantcol = buildraw %>%
+  select(quant_variables)
+
+catcol = buildraw %>%
+  select(cat_variables)
+```
+
+## EBEWE Open Data Description
+- The data contains 28 Variables and 29,192 observations
+- 11,691 buildings are identified uniquely by BUILDING.ID
+- There are fewer unique addresses (11,479) than building ID's
+- Energy Star Eligbility seems to have a typo, 8 observations are marked as "Non" instead of yes or no
+
+## Categorical Variables
+```{r echo = FALSE,message = FALSE}
+percent_na = round(unname(sapply(catcol, function(y) sum(is.na(y))))/nrow(buildraw)*100)
+Unique_Values = round(unname(sapply(catcol, function(y) n_distinct(y, na.rm = TRUE))), 2)
+qtable = as.data.frame(cbind(cat_variables,Unique_Values, percent_na))
+
+#Output table at size that fits
+kable(qtable) %>%
+  kable_styling(latex_options = c("scale_down"))
+```
+
+## Quantitative Variable: Descriptions
+
+- "EUI" is the abbreviation for "energy use intensity"
+- Intensity is measured relative to building square footage
+- Source energy represents the total amount of raw fuel that is required to operate a building, incorporating all transmission, delivery, and production losses. Energy star considers this the most equitable unit of evaluation
+- Site energy is the amount of heat and electricity consumed that is reflected in a utiity bill
+
+## Quick Look: Quantitative Variables
+
+```{r echo = FALSE,fig.margin =TRUE}
+#Generate descriptives and build table
+percent_na = round(unname(sapply(quantcol, function(y) sum(is.na(y))))/nrow(buildraw)*100)
+mean = round(unname(sapply(quantcol, function(y) mean(y, na.rm = TRUE))), 2)
+median = unname(sapply(quantcol, function(y) median(y, na.rm = TRUE)))
+max = unname(sapply(quantcol, function(y) max(y, na.rm = TRUE)))
+min = unname(sapply(quantcol, function(y) min(y, na.rm = TRUE)))
+qtable = as.data.frame(cbind(quant_variables,percent_na, mean, median, max, min))
+
+#Output table at size that fits
+kable(qtable) %>%
+  kable_styling(latex_options = c("scale_down"))
+```
+
+## Correlation Plot on compliance and non-compliance
+- Used numeric variables with less than 90% na
+- After Removing NAs we are left with 9,398 Observations
+
+```{r echo = FALSE, message = FALSE}
+cor_variables = c("CO2.EMISSIONS",  "DIFFERENCE.FROM.NATIONAL.MEDIAN.SOURCE", "DIFFERENCE.FROM.NATIONAL.MEDIAN.SITE", "ENERGY.STAR.SCORE", "GROSS.FLOOR.AREA","NUMBER.OF.BUILDINGS", "OCCUPANCY", "ENERGY.USE.INTENSITY", "Source.EUI.",  "TOTAL.WATER.USE", "WEATHER.NORMALIZED.SITE.ENERGY.USE.INTENSITY", "WEATHER.NORMALIZED.SOURCE.ENERGY.USE.INTENSITY", "COMPLIANCE.STATUS", "ENERGY.STAR.ELIGIBILITY")
+
+cna = buildraw %>%
+  select(cor_variables) %>%
+  drop_na() %>%
+  dummy_cols() %>%
+  select(-"COMPLIANCE.STATUS_NOT COMPLIED", -ENERGY.STAR.ELIGIBILITY_No, -ENERGY.STAR.ELIGIBILITY_Non, -COMPLIANCE.STATUS, -ENERGY.STAR.ELIGIBILITY)
+
+cna$COMPLIANCE.STATUS_COMPLIED = as.numeric(cna$COMPLIANCE.STATUS_COMPLIED)
+cna$ENERGY.STAR.ELIGIBILITY_Yes = as.numeric(cna$ENERGY.STAR.ELIGIBILITY_Yes)
+corc=cor(cna)
+corc = corc %>%
+  as.data.frame() %>%
+  slice(-1:-12, -14)%>%
+  as.matrix()
+  
+corrplot(corc, cl.pos='n')
+```
+
+## Building Categories
+![](C:/Users/Nate/Dropbox/Building Categories Plot 1.png)
+
+## Buildings Continued
+![](C:/Users/Nate/Dropbox/Building Categories Plot 3.png)
+
+## Intensity by building size
+
+```{r echo = FALSE, message = FALSE, warning = FALSE}
+#Energy Intensity graph by building size
+
+bsIntensity = buildraw %>%
+  filter(LADBS.Building.Category == c("100,000+ sqft", "50,000 to 99,999 sqft", "20,000 to 49,999 sqft")) %>%
+  group_by(LADBS.Building.Category) %>%
+  summarize(average_energy_intensity = mean(Source.EUI., na.rm = T))
+
+
+eiplot = ggplot(bsIntensity, aes(LADBS.Building.Category, average_energy_intensity, fill = LADBS.Building.Category))+
+              geom_bar(stat = "identity") + 
+              scale_fill_brewer(palette = "Greens") 
+
+#Water use Intensity Plot
+iwIntensity = buildraw %>%
+  filter(LADBS.Building.Category == c("100,000+ sqft", "50,000 to 99,999 sqft", "20,000 to 49,999 sqft")) %>%
+  group_by(LADBS.Building.Category) %>%
+  summarize(Average_Water_Intensity = mean(INDOOR.WATER.INTENSITY, na.rm = T))
+
+wiplot = ggplot(iwIntensity, aes(LADBS.Building.Category, Average_Water_Intensity, fill = LADBS.Building.Category))+
+                geom_bar(stat = "identity") + 
+                scale_fill_brewer(palette = "Greens") 
+
+grid.arrange(eiplot, wiplot, ncol = 1)
+```
+
+## Intensity by Occupancy
+- Very Large values removed to get a better sense of the data
+```{r echo = FALSE, message = FALSE, warning = FALSE}
+gi = buildraw %>%
+  filter(GROSS.FLOOR.AREA <= 	2000000) %>%
+  filter(CO2.EMISSIONS <= 100000)
+
+ggplot(gi, aes(GROSS.FLOOR.AREA, CO2.EMISSIONS)) +
+  geom_point(col = "darkgreen") +
+   geom_smooth(method=lm , color="blue", fill="#69b3a2", se=TRUE)
+
+```
+
+
+## Building Compliancy
+![](C:/Users/Nate/Dropbox/Building Categories Plot 2.png)
+
+## Compliancy Continued
+![](C:/Users/Nate/Dropbox/Efficiency Metrics Plot 1.png)
+
+
+## Map by zipcode of compliance, Occupancy, Total Water Use, Co2, and Poverty
+-![Interactive Map Available](C:/Users/Nate/Dropbox/rmap.png){height = 80%}
+
+

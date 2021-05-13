@@ -1,0 +1,244 @@
+citybes_id,LA_bid,HVAC_system_type,number_of_HVAC_units,average_cooling_capacity_per_HVAC_unit(kW)
+7622804,382681906783,split system air conditioner+gas furnace - each zone,60,2.38703162471921
+7622805,379977910076,Packaged rooftop (VAV with reheat)-each story + boiler,3,271.489249019904
+7622806,390177908735,central chiller + boiler (VAV with reheat),1,961.846331126463
+7622807,388479907490,central chiller + boiler (VAV with reheat),1,1295.62411508
+7622808,378700910044,Packaged rooftop (VAV with reheat)-each story + boiler,3,204.785167671798
+7622809,389703910175,central chiller + boiler (VAV with reheat),1,1149.08661983008
+7622811,390137909055,central chiller + boiler (VAV with reheat),1,1368.51799834232
+7622813,496795871774,split system air conditioner+gas furnace - each zone,48,4.76210633862155
+7622814,390574910969,central chiller + boiler (VAV with reheat),1,2076.96186540782
+7622817,382959906334,split system air conditioner+gas furnace - each zone,39,2.64152583150481
+7622818,383635914938,split system air conditioner+gas furnace - each zone,63,1.96010190913814
+7622819,467157838988,split system air conditioner+gas furnace - each zone,75,3.41294650511205
+7622820,476177833534,split system air conditioner+gas furnace - each zone,75,2.71215392567972
+7622823,473982833569,split system air conditioner+gas furnace - each zone,57,3.61285648162921
+7622824,378562887758,central chiller + boiler (VAV with reheat),1,1240.10913092885
+7622825,381148887557,central chiller + boiler (VAV with reheat),1,1062.34970164888
+7622826,373027883506,Packaged rooftop (VAV with reheat)-each story + boiler,5,82.8467354613118
+7622827,370385882011,Packaged rooftop (VAV with reheat)-each story + boiler,3,265.04824011259
+7622829,468776836743,split system air conditioner+gas furnace - each zone,51,4.17789210773509
+7622830,380374893538,Packaged rooftop (VAV with reheat)-each story + boiler,3,325.207488928207
+7622831,383677905746,split system air conditioner+gas furnace - each zone,204,2.82825297158583
+7622832,378545899428,split system air conditioner+gas furnace - each zone,15,3.46696994373511
+7622833,389467884701,split system air conditioner+gas furnace - each zone,64,3.03914916741306
+7622834,381803884012,central chiller + boiler (VAV with reheat),1,1001.07183891381
+7622835,381891887559,central chiller + boiler (VAV with reheat),1,1712.24177234837
+7622836,486231864726,central chiller + boiler (VAV with reheat),1,1580.06462505679
+7622837,381456891246,central chiller + boiler (VAV with reheat),1,3069.77366863159
+7622838,381181889687,central chiller + boiler (VAV with reheat),1,2285.50030671993
+7622839,388390902513,split system air conditioner+gas furnace - each zone,12,4.41265119010413
+7622842,379701884640,Packaged rooftop (VAV with reheat)-each story + boiler,1,292.056855690724
+7622843,380106887811,central chiller + boiler (VAV with reheat),1,5085.81896219783
+7622845,380376888653,central chiller + boiler (VAV with reheat),1,9149.12554697471
+7622846,437296909149,central chiller + boiler (VAV with reheat),1,1228.91158861676
+7622847,382082891637,Packaged rooftop (VAV with reheat)-each story + boiler,3,254.493765920112
+7622848,444282877070,split system air conditioner+gas furnace - each zone,48,3.82967353395971
+7622852,422051878235,central chiller + boiler (VAV with reheat),1,1423.4176077651
+7622853,424355878790,split system air conditioner+gas furnace - each zone,63,3.73459149098703
+7622854,424106878805,split system air conditioner+gas furnace - each zone,66,2.52824408738241
+7622855,371094881812,split system air conditioner+gas furnace - each zone,195,2.88047454660081
+7622856,449232874548,split system air conditioner+gas furnace - each zone,129,4.25415600548326
+7622857,449986874615,split system air conditioner+gas furnace - each zone,72,3.14547895686694
+7622858,443462874434,central chiller + boiler (VAV with reheat),1,864.221811675346
+7622859,442847876359,split system air conditioner+gas furnace - each zone,45,3.31514596798079
+7622861,423484879098,split system air conditioner+gas furnace - each zone,68,2.32930415126203
+7622862,388116896270,split system air conditioner+gas furnace - each zone,146,2.17309744718022
+7622863,444303899312,split system air conditioner+gas furnace - each zone,309,2.58858326342841
+7622864,483149843204,central chiller + boiler (VAV with reheat),1,678.686510210242
+7622865,478628840586,central chiller + boiler (VAV with reheat),1,5063.23351462074
+7622866,479079840456,split system air conditioner+gas furnace - each zone,45,6.50844695206866
+7622867,423786879892,split system air conditioner+gas furnace - each zone,60,4.00606259628891
+7622868,424341879777,split system air conditioner+gas furnace - each zone,60,4.07891867316337
+7622869,424186879165,split system air conditioner+gas furnace - each zone,63,3.4635116998157
+7622870,436274875405,Packaged rooftop (VAV with reheat)-each story + boiler,1,581.526416726838
+7622871,477139846267,split system air conditioner+gas furnace - each zone,54,4.62702996519253
+7622872,426607843742,central chiller + boiler (VAV with reheat),1,7046.52436501709
+7622873,476409846684,split system air conditioner+gas furnace - each zone,63,4.09271766815997
+7622874,424339848081,split system air conditioner+gas furnace - each zone,33,6.90957370512524
+7622875,425207847897,split system air conditioner+gas furnace - each zone,42,5.83315685731457
+7622876,476609846441,split system air conditioner+gas furnace - each zone,138,2.80851243577825
+7622877,426789842900,split system air conditioner+gas furnace - each zone,54,5.28458359135617
+7622878,427727844775,split system air conditioner+gas furnace - each zone,72,5.08971835639639
+7622879,426231843604,central chiller + boiler (VAV with reheat),1,3161.49969094034
+7622880,428050844196,Packaged rooftop (VAV with reheat)-each story + boiler,4,201.048225574715
+7622881,427189841986,split system air conditioner+gas furnace - each zone,102,4.2805345588873
+7622882,429165841119,central chiller + boiler (VAV with reheat),1,695.614639424563
+7622883,424148847924,split system air conditioner+gas furnace - each zone,63,3.49316162583767
+7622884,474823746910,split system air conditioner+gas furnace - each zone,21,3.0700517309842
+7622885,472719846479,split system air conditioner+gas furnace - each zone,51,4.09689125864409
+7622887,481264843692,split system air conditioner+gas furnace - each zone,150,3.68709920253654
+7622888,484650846387,split system air conditioner+gas furnace - each zone,135,3.38339988164795
+7622889,473831844879,central chiller + boiler (VAV with reheat),1,1373.37040552751
+7622890,449541874013,split system air conditioner+gas furnace - each zone,162,3.97841018813896
+7622891,469973844796,central chiller + boiler (VAV with reheat),1,6453.16599126725
+7622892,473766846600,central chiller + boiler (VAV with reheat),1,1489.6375135432
+7622893,474019846140,central chiller + boiler (VAV with reheat),1,1724.46439096847
+7622894,473055843453,central chiller + boiler (VAV with reheat),1,580.917469367505
+7622895,427166843895,central chiller + boiler (VAV with reheat),1,3562.62459418373
+7622896,472083845771,central chiller + boiler (VAV with reheat),1,2148.22619050062
+7622897,443556850110,split system air conditioner+gas furnace - each zone,57,5.41704805634436
+7622898,472427850630,split system air conditioner+gas furnace - each zone,108,3.46166209440533
+7622899,473688846257,central chiller + boiler (VAV with reheat),1,2085.452111434
+7622900,468577846468,split system air conditioner+gas furnace - each zone,60,4.00015792182662
+7622901,483602846122,split system air conditioner+gas furnace - each zone,120,4.19003595591327
+7622902,468351845926,split system air conditioner+gas furnace - each zone,39,5.9044514851383
+7622904,472273846021,split system air conditioner+gas furnace - each zone,48,4.34538172244372
+7622905,471365849343,split system air conditioner+gas furnace - each zone,63,3.74465789492374
+7622906,473221844894,central chiller + boiler (VAV with reheat),1,15405.2323609534
+7622907,470387843861,split system air conditioner+gas furnace - each zone,84,3.79174766335785
+7622908,470022846911,split system air conditioner+gas furnace - each zone,60,4.63544821688028
+7622909,468501845175,central chiller + boiler (VAV with reheat),1,3893.90981323603
+7622910,448246849754,split system air conditioner+gas furnace - each zone,54,4.30487572042914
+7622911,460917845212,central chiller + boiler (VAV with reheat),1,1276.89968630786
+7622912,471757846577,split system air conditioner+gas furnace - each zone,48,5.38793368330323
+7622913,469663845750,central chiller + boiler (VAV with reheat),1,1749.76037487743
+7622914,470403846196,split system air conditioner+gas furnace - each zone,117,2.50040775068009
+7622915,472297845937,split system air conditioner+gas furnace - each zone,72,3.9278173262477
+7622916,472905846145,split system air conditioner+gas furnace - each zone,300,2.3682221019282
+7622917,455979844812,split system air conditioner+gas furnace - each zone,156,3.57784309003967
+7622918,444426803008,central chiller + boiler (VAV with reheat),1,3447.76858655254
+7622919,471757847212,split system air conditioner+gas furnace - each zone,69,3.5540253502024
+7622920,435898816450,central chiller + boiler (VAV with reheat),1,4411.35487688869
+7622921,483328840452,central chiller + boiler (VAV with reheat),1,3445.08614617328
+7622923,437292895970,packaged rooftop air conditioner+gas furnace - each zone,2,58.5255794199901
+7622924,422453840893,central chiller + boiler (VAV with reheat),1,6087.19241176168
+7622926,468999846221,split system air conditioner+gas furnace - each zone,48,3.98785659192848
+7622927,433334801580,central chiller + boiler (VAV with reheat),1,5232.5979939772
+7622928,415903879488,central chiller + boiler (VAV with reheat),1,6125.15640514295
+7622929,423652835288,central chiller + boiler (VAV with reheat),1,2982.13749391331
+7622930,437282797940,central chiller + boiler (VAV with reheat),1,2945.92139483629
+7622931,445598803106,central chiller + boiler (VAV with reheat),1,13011.9033187165
+7622932,482892841035,central chiller + boiler (VAV with reheat),1,8410.75884074751
+7622933,436078845276,central chiller + boiler (VAV with reheat),1,6737.59649582872
+7622934,428305818336,split system air conditioner+gas furnace - each zone,264,2.88891588335353
+7622935,443988801650,central chiller + boiler (VAV with reheat),1,2177.97637556599
+7622936,454385845934,split system air conditioner+gas furnace - each zone,258,4.0829695092325
+7622937,483789840364,central chiller + boiler (VAV with reheat),1,17279.5371800878
+7622938,437783830194,split system air conditioner+gas furnace - each zone,24,4.29803209277614
+7622939,457638859372,central chiller + boiler (VAV with reheat),1,4013.75052953854
+7622940,435482845065,central chiller + boiler (VAV with reheat),1,21728.8768852114
+7622941,483946839934,central chiller + boiler (VAV with reheat),1,5891.48611050322
+7622942,437640797966,Packaged rooftop (VAV with reheat)-each story + boiler,2,387.041515048762
+7622943,432321816246,central chiller + boiler (VAV with reheat),1,1159.25195750253
+7622944,443468802930,central chiller + boiler (VAV with reheat),1,2852.65902714012
+7622945,436323844287,central chiller + boiler (VAV with reheat),1,14937.2133982328
+7622946,484909831704,Packaged rooftop (VAV with reheat)-each story + boiler,2,182.303645061741
+7622947,483672841146,central chiller + boiler (VAV with reheat),1,1333.00975692579
+7622948,459548827498,split system air conditioner+gas furnace - each zone,186,3.53393657156767
+7622949,484438841982,central chiller + boiler (VAV with reheat),1,19568.6920120441
+7622950,409865883925,split system air conditioner+gas furnace - each zone,339,1.65256795635718
+7622951,419601844009,split system air conditioner+gas furnace - each zone,216,3.47980704206208
+7622952,414926879832,central chiller + boiler (VAV with reheat),1,8085.82752516308
+7622953,449408882761,split system air conditioner+gas furnace - each zone,45,9.5385052461951
+7622954,483482840725,central chiller + boiler (VAV with reheat),1,4188.08842879128
+7622955,488309844505,split system air conditioner+gas furnace - each zone,144,3.13716816163093
+7622956,480305863662,split system air conditioner+gas furnace - each zone,210,4.03298787231803
+7622957,398795887708,split system air conditioner+gas furnace - each zone,120,1.64060537373072
+7622958,428751936958,split system air conditioner+gas furnace - each zone,249,2.72273948982103
+7622959,485091841660,central chiller + boiler (VAV with reheat),1,2479.44814823969
+7622960,425341909908,split system air conditioner+gas furnace - each zone,243,2.12736340307305
+7622961,488588846360,central chiller + boiler (VAV with reheat),1,1308.83653906139
+7622962,425075904846,split system air conditioner+gas furnace - each zone,345,2.25317723480957
+7622963,438800926181,Packaged rooftop (VAV with reheat)-each story + boiler,2,401.32920916272
+7622965,435913921242,split system air conditioner+gas furnace - each zone,63,5.3868087262433
+7622967,420387841969,central chiller + boiler (VAV with reheat),1,1702.90807040267
+7622968,472933860590,split system air conditioner+gas furnace - each zone,51,3.83825237723091
+7622969,419784842156,central chiller + boiler (VAV with reheat),1,2334.39899672477
+7622970,418719846243,split system air conditioner+gas furnace - each zone,96,3.84700088948217
+7622971,458703875119,Packaged rooftop (VAV with reheat)-each story + boiler,4,236.105544320731
+7622972,434174913458,split system air conditioner+gas furnace - each zone,27,3.6578742239176
+7622973,419190846190,split system air conditioner+gas furnace - each zone,99,4.3606606191372
+7622975,461768859163,central chiller + boiler (VAV with reheat),1,923.661761017771
+7622976,472158856869,split system air conditioner+gas furnace - each zone,57,4.38808587130109
+7622977,467214859948,split system air conditioner+gas furnace - each zone,45,4.00414887250713
+7622978,457429859615,central chiller + boiler (VAV with reheat),1,3053.51177243947
+7622979,460238860759,split system air conditioner+gas furnace - each zone,27,13.8913801806125
+7622980,456324857422,split system air conditioner+gas furnace - each zone,78,2.62337652320948
+7622981,457359858295,packaged rooftop air conditioner+gas furnace - each zone,2,56.8070559360777
+7622982,459597855056,Packaged rooftop (VAV with reheat)-each story + boiler,3,316.998823544749
+7622985,483239841469,central chiller + boiler (VAV with reheat),1,1830.40622823874
+7622986,456718860123,split system air conditioner+gas furnace - each zone,78,4.21448477988051
+7622987,455620858720,split system air conditioner+gas furnace - each zone,123,3.78804512225147
+7622988,456593859637,split system air conditioner+gas furnace - each zone,78,4.31870196576438
+7622991,457797852711,split system air conditioner+gas furnace - each zone,69,4.27857242001771
+7622993,484535842847,central chiller + boiler (VAV with reheat),1,1507.36230675968
+7622995,481287837435,central chiller + boiler (VAV with reheat),1,1375.54292400119
+7622996,488436840175,central chiller + boiler (VAV with reheat),1,1322.06325864154
+7622997,474493766753,central chiller + boiler (VAV with reheat),1,903.244722315322
+7622999,410885918448,split system air conditioner+gas furnace - each zone,348,1.91073343932798
+7623000,475848772886,central chiller + boiler (VAV with reheat),1,2692.17332483157
+7623001,470945771097,central chiller + boiler (VAV with reheat),1,1086.36694788335
+7623003,399239903292,Packaged rooftop (VAV with reheat)-each story + boiler,3,248.762778896186
+7623004,417229821445,Packaged rooftop (VAV with reheat)-each story + boiler,3,102.814972614067
+7623006,446679807826,Packaged rooftop (VAV with reheat)-each story + boiler,1,232.919674378457
+7623007,402252917842,split system air conditioner+gas furnace - each zone,4,6.18508734539796
+7623008,489036839673,split system air conditioner+gas furnace - each zone,93,4.33578828930712
+7623009,473119769690,central chiller + boiler (VAV with reheat),1,1083.04126793176
+7623010,476698826842,Packaged rooftop (VAV with reheat)-each story + boiler,3,231.519708309261
+7623011,441413806301,central chiller + boiler (VAV with reheat),1,1120.073369355
+7623013,450885832173,central chiller + boiler (VAV with reheat),1,1362.82771167792
+7623014,418772817957,split system air conditioner+gas furnace - each zone,99,4.92905820624684
+7623015,441967814883,Packaged rooftop (VAV with reheat)-each story + boiler,3,254.641168280913
+7623016,422686893119,split system air conditioner+gas furnace - each zone,74,2.73580931919258
+7623017,420354896258,packaged rooftop air conditioner+gas furnace - each zone,5,21.9608333638936
+7623018,403904914860,split system air conditioner+gas furnace - each zone,147,3.06681960684572
+7623019,420275895779,central chiller + boiler (VAV with reheat),1,2213.38193226272
+7623021,421887896067,split system air conditioner+gas furnace - each zone,69,2.97496792349505
+7623022,420791882606,central chiller + boiler (VAV with reheat),1,895.079046843079
+7623023,420486897586,split system air conditioner+gas furnace - each zone,195,2.50466343568092
+7623024,426546882417,split system air conditioner+gas furnace - each zone,54,4.09892144359425
+7623025,420903893381,central chiller + boiler (VAV with reheat),1,1503.36374568856
+7623026,431144888805,split system air conditioner+gas furnace - each zone,57,4.4942051498788
+7623027,433673836970,central chiller + boiler (VAV with reheat),1,1310.37630335973
+7623028,441939842860,central chiller + boiler (VAV with reheat),1,1248.1638952424
+7623029,426867895980,split system air conditioner+gas furnace - each zone,126,2.68222863925786
+7623030,439145842080,central chiller + boiler (VAV with reheat),1,7061.80370803004
+7623031,425323835914,central chiller + boiler (VAV with reheat),1,1586.44545888082
+7623032,421449932901,split system air conditioner+gas furnace - each zone,82,1.79742339233509
+7623033,420317837141,split system air conditioner+gas furnace - each zone,105,2.65570355483474
+7623034,466703917206,Packaged rooftop (VAV with reheat)-each story + boiler,1,244.699550144073
+7623035,475345727855,central chiller + boiler (VAV with reheat),1,819.796776986387
+7623036,430259840966,central chiller + boiler (VAV with reheat),1,1853.7934955183
+7623037,434176814613,central chiller + boiler (VAV with reheat),1,1283.57029497235
+7623038,434197815382,central chiller + boiler (VAV with reheat),1,1038.17517842752
+7623040,403772913397,split system air conditioner+gas furnace - each zone,264,2.22610707282685
+7623041,473914720897,split system air conditioner+gas furnace - each zone,165,2.5781663262031
+7623042,433300816111,central chiller + boiler (VAV with reheat),1,1320.06783867737
+7623043,419932921789,central chiller + boiler (VAV with reheat),1,1722.33157950146
+7623044,419346916472,Packaged rooftop (VAV with reheat)-each story + boiler,4,144.982267344856
+7623045,419250837603,split system air conditioner+gas furnace - each zone,102,3.75771567621932
+7623046,421454908568,split system air conditioner+gas furnace - each zone,36,2.16497227986315
+7623047,433372828774,split system air conditioner+gas furnace - each zone,96,3.88800595676913
+7623048,434260895269,split system air conditioner+gas furnace - each zone,93,3.14595161497869
+7623049,445625889547,split system air conditioner+gas furnace - each zone,54,3.67579435385632
+7623050,419985883142,split system air conditioner+gas furnace - each zone,78,2.67966702061198
+7623051,442829883756,split system air conditioner+gas furnace - each zone,36,4.14831955207907
+7623052,441843890451,central chiller + boiler (VAV with reheat),1,1555.71251656322
+7623054,407346893402,split system air conditioner+gas furnace - each zone,75,6.30046094510471
+7623055,441593894246,split system air conditioner+gas furnace - each zone,120,2.63015255741145
+7623056,412874895178,central chiller + boiler (VAV with reheat),1,1618.00349575723
+7623057,444249884184,split system air conditioner+gas furnace - each zone,93,3.83604210222691
+7623058,399400891311,split system air conditioner+gas furnace - each zone,76,2.67407290320468
+7623059,399009903033,split system air conditioner+gas furnace - each zone,78,3.7313746907409
+7623060,391869896539,split system air conditioner+gas furnace - each zone,21,3.55462742305617
+7623061,393418890894,Packaged rooftop (VAV with reheat)-each story + boiler,2,358.665832622297
+7623063,399701899576,split system air conditioner+gas furnace - each zone,96,4.04105607103516
+7623064,410998900241,Packaged rooftop (VAV with reheat)-each story + boiler,2,424.267750395405
+7623065,444925887972,split system air conditioner+gas furnace - each zone,174,3.01614244098411
+7623066,410005885200,Packaged rooftop (VAV with reheat)-each story + boiler,2,326.938032947912
+7623067,474116846730,split system air conditioner+gas furnace - each zone,285,3.52406997039597
+7623068,413869880015,central chiller + boiler (VAV with reheat),1,5661.33405108984
+7623069,416331879648,Packaged rooftop (VAV with reheat)-each story + boiler,1,604.439514342962
+7623070,400217885422,Packaged rooftop (VAV with reheat)-each story + boiler,3,194.987927418708
+7623071,410847900259,Packaged rooftop (VAV with reheat)-each story + boiler,2,433.864924998268
+7623072,410203880794,central chiller + boiler (VAV with reheat),1,875.389893503991
+7623073,405711881767,Packaged rooftop (VAV with reheat)-each story + boiler,5,187.642259971735
+7623074,399332887733,split system air conditioner+gas furnace - each zone,76,2.63257099831304
+7623075,441541884154,split system air conditioner+gas furnace - each zone,204,1.52549965363602
+7623077,399938887042,split system air conditioner+gas furnace - each zone,165,1.78509781657632
+7623078,397870888153,Packaged rooftop (VAV with reheat)-each story + boiler,2,374.765279465243
+7623079,397512888178,Packaged rooftop (VAV with reheat)-each story + boiler,1,480.994083910681
+7623080,397662888193,Packaged rooftop (VAV with reheat)-each story + boiler,2,324.209785863283
+7623081,397736888191,Packaged rooftop (VAV with reheat)-each story + boiler,2,311.730320373493
+7623082,418772879441,split system air conditioner+gas furnace - each zone,84,3.47430677935989
